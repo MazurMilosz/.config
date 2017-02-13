@@ -188,14 +188,13 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec /home/krul/.config/i3/exitMenue.sh
-bindsym $mod+Shift+p exec poweroff
 
-# set up window colors 
+# set up window colors
 
 #                       border              background              text                    indicator
 client.focused          $bg-color           $active-bg-color        $active-text-color      #00ff00
 client.focused_inactive $bg-color           $bg-color               $inactive-text-color    #00ff00 
-client.unfocused        $bg-color           $bg-color               $inactive-text-color    #00ff00  
+client.unfocused        $bg-color           $bg-color               $inactive-text-color    #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color        $text-color             #00ff00 
 
 # resize window (you can also use the mouse for that)
@@ -235,7 +234,7 @@ bar {
         colors {
                 separator   #757575
                 background  $bg-color
-                statusline  #00ff00 
+                statusline  #00ff00
                 #                    border                  background              text
                 focused_workspace    $bg-color               $bg-color               $text-color
                 active_workspace     $bg-color               $bg-color               $text-color
