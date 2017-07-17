@@ -40,7 +40,6 @@ call plug#end()
 "PLUGS CONFIGURATION
 
 "###################################################################################################
-
 "Set leader
 
 let mapleader = " "
@@ -116,6 +115,21 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 "###################################################################################################
+"
+"CONF FOR NOOB
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+"###################################################################################################
 
 "Rainbow parantheses
 "
@@ -187,6 +201,7 @@ set mouse=a
 syntax on
 
 set nocompatible
+set noswapfile
 
 set modelines=0
 
@@ -261,20 +276,7 @@ let colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let $colorcolumn="80,".join(range(120,999),",")
 
-"CONF FOR NOOB
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
-
-"###################################################################################################
 
 "SET F1 as ESC
 
@@ -317,11 +319,3 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 "###################################################################################################
-
-
-
-
-
-
-
-
